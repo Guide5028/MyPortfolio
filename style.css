@@ -98,6 +98,23 @@ section {
   display: grid;
 }
 
+hr.divider {
+  border: none;
+  border-top: 1px solid var(--b-sub);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.label {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.9rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  display: block;
+}
+
 /* Hero */
 #home {
   align-items: center;
@@ -163,6 +180,109 @@ section {
   margin-bottom: 3rem;
   font-size: 1.1rem;
   font-weight: 300;
+}
+
+/* About */
+#about {
+  padding: 6rem 3rem;
+}
+
+/* Skills */
+#skills h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.93rem;
+}
+
+thead tr {
+  border-bottom: 2px solid var(--accent);
+}
+
+th {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-align: left;
+  padding: 0.9rem 1.2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+td {
+  color: var(--body);
+  border-bottom: 1px solid var(--b-sub);
+  vertical-align: middle;
+  padding: 0.9rem 1.2rem;
+}
+
+tr:hover td {
+  background: #e8c5470a;
+}
+
+.sn {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+.skill-cat {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.skill-years {
+  font-size: 0.82rem;
+}
+
+.bar-wrap {
+  background: #ffffff12;
+  border-radius: 3px;
+  width: 140px;
+  height: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 3px;
+  height: 100%;
+}
+
+.badge {
+  border: 1px solid var(--b-sub);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.6rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  display: inline-block;
+}
+
+.badge.expert {
+  border-color: var(--b-acc);
+  color: var(--accent);
+}
+
+/* Projects */
+#projects h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+/* Video */
+#video h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 /* Footer */
