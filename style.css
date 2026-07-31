@@ -465,6 +465,109 @@ tr:hover td {
   left: 0;
 }
 
+* Contact */
+#contact .g2 {
+  align-items: start;
+}
+
+#contact h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.contact-p {
+  color: var(--body);
+  margin-bottom: 2rem;
+}
+
+.ci-list {
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style: none;
+  display: flex;
+}
+
+.ci-list li {
+  border-left: 2px solid var(--b-acc);
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 1rem;
+  display: flex;
+}
+
+.ci-lbl {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  min-width: 82px;
+  padding-top: 0.1rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+}
+
+.ci-val {
+  color: var(--cream);
+  font-size: 0.95rem;
+}
+
+.ci-val a {
+  color: var(--cream);
+  border-bottom: 1px solid var(--b-sub);
+  padding-bottom: 0.1rem;
+}
+
+.ci-val a:hover {
+  color: var(--accent);
+  border-color: var(--b-acc);
+}
+
+form {
+  flex-direction: column;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.fg {
+  flex-direction: column;
+  gap: 0.45rem;
+  display: flex;
+}
+
+.fg label {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+}
+
+.fg input,
+.fg textarea {
+  border: 1px solid var(--b-sub);
+  color: var(--cream);
+  resize: none;
+  background: #ffffff0a;
+  outline: none;
+  padding: 0.8rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.93rem;
+  transition: border-color 0.2s;
+}
+
+.fg input:focus,
+.fg textarea:focus {
+  border-color: var(--accent);
+}
+
+.fg input::placeholder,
+.fg textarea::placeholder {
+  color: #c8b99a47;
+}
+
+.contact-submit {
+  align-self: flex-start;
+}
+
 /* Footer */
 footer {
   border-top: 1px solid var(--b-sub);
