@@ -91,7 +91,7 @@ section {
   padding: 6rem 3rem;
 }
 
-.g2 {
+.split-grid {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 5rem;
@@ -247,7 +247,7 @@ section {
 }
 
 /* About */
-#about .g2 {
+#about .split-grid {
   align-items: center;
 }
 
@@ -345,7 +345,7 @@ tr:hover td {
   background: #e8c5470a;
 }
 
-.sn {
+.skill-name {
   color: var(--cream);
   font-weight: 500;
 }
@@ -353,10 +353,6 @@ tr:hover td {
 .skill-cat {
   font-size: 0.8rem;
   color: var(--muted);
-}
-
-.skill-years {
-  font-size: 0.82rem;
 }
 
 .bar-wrap {
@@ -389,6 +385,10 @@ tr:hover td {
   color: var(--accent);
 }
 
+.badge.learning {
+  opacity: 0.65;
+}
+
 /* Projects */
 #projects h2 {
   margin-bottom: 0.75rem;
@@ -396,7 +396,7 @@ tr:hover td {
 }
 
 .card-grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   display: grid;
 }
@@ -481,7 +481,7 @@ tr:hover td {
   padding: 6rem 3rem;
 }
 
-.vid-inner {
+.video-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -516,7 +516,7 @@ tr:hover td {
 }
 
 /* Contact */
-#contact .g2 {
+#contact .split-grid {
   align-items: start;
 }
 
@@ -530,14 +530,14 @@ tr:hover td {
   margin-bottom: 2rem;
 }
 
-.ci-list {
+.contact-list {
   flex-direction: column;
   gap: 1.25rem;
   list-style: none;
   display: flex;
 }
 
-.ci-list li {
+.contact-list li {
   border-left: 2px solid var(--b-acc);
   align-items: flex-start;
   gap: 1rem;
@@ -545,7 +545,7 @@ tr:hover td {
   display: flex;
 }
 
-.ci-lbl {
+.contact-label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--accent);
@@ -555,18 +555,18 @@ tr:hover td {
   font-size: 0.7rem;
 }
 
-.ci-val {
+.contact-value {
   color: var(--cream);
   font-size: 0.95rem;
 }
 
-.ci-val a {
+.contact-value a {
   color: var(--cream);
   border-bottom: 1px solid var(--b-sub);
   padding-bottom: 0.1rem;
 }
 
-.ci-val a:hover {
+.contact-value a:hover {
   color: var(--accent);
   border-color: var(--b-acc);
 }
@@ -577,13 +577,13 @@ form {
   display: flex;
 }
 
-.fg {
+.form-group {
   flex-direction: column;
   gap: 0.45rem;
   display: flex;
 }
 
-.fg label {
+.form-group label {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
@@ -591,8 +591,8 @@ form {
   font-size: 0.7rem;
 }
 
-.fg input,
-.fg textarea {
+.form-group input,
+.form-group textarea {
   border: 1px solid var(--b-sub);
   color: var(--cream);
   resize: none;
@@ -604,13 +604,13 @@ form {
   transition: border-color 0.2s;
 }
 
-.fg input:focus,
-.fg textarea:focus {
+.form-group input:focus,
+.form-group textarea:focus {
   border-color: var(--accent);
 }
 
-.fg input::placeholder,
-.fg textarea::placeholder {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
   color: #c8b99a47;
 }
 
