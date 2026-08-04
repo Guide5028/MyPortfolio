@@ -40,26 +40,26 @@ h3 {
 
 /* nav */
 nav {
-  z-index: 100;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--b-sub);
-  background: #0e0e0ee0;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 3rem;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19.2px 48px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--b-sub);
+  background: #0e0e0ee0;
 }
 
 .nav-logo {
   color: var(--cream);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.448px;
   font-family: "Playfair Display", serif;
-  font-size: 1.4rem;
+  font-size: 22.4px;
   font-weight: 700;
 }
 
@@ -68,17 +68,17 @@ nav {
 }
 
 .nav-links {
-  gap: 2.5rem;
-  list-style: none;
   display: flex;
+  gap: 40px;
+  list-style: none;
 }
 
 .nav-links a {
-  letter-spacing: 0.12em;
+  letter-spacing: 1.44px;
   text-transform: uppercase;
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.75rem;
+  font-size: 12px;
 }
 
 .nav-links a:hover {
@@ -88,14 +88,14 @@ nav {
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 3rem;
+  padding: 96px 48px;
 }
 
 .split-grid {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 5rem;
-  display: grid;
+  gap: 80px;
 }
 
 #skills,
@@ -104,66 +104,66 @@ section {
 }
 
 .label {
-  letter-spacing: 0.2em;
+  display: block;
+  letter-spacing: 2.304px;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.9rem;
+  margin-bottom: 14.4px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  display: block;
+  font-size: 11.52px;
 }
 
 /* Hero */
 #home {
-  align-items: center;
-  min-height: 100vh;
   display: flex;
   position: relative;
+  align-items: center;
+  min-height: 100vh;
   overflow: hidden;
 }
 
 .hero-bg {
-  filter: brightness(0.22) saturate(0.5);
+  position: absolute;
+  inset: 0;
   z-index: 0;
   background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1600&h=900&fit=crop&auto=format");
   background-position: center;
   background-size: cover;
-  position: absolute;
-  inset: 0;
+  filter: brightness(0.22) saturate(0.5);
 }
 
 .hero-overlay {
-  z-index: 1;
-  background: linear-gradient(135deg, #0e0e0ec7 0%, #0e0e0e40 65%, #0000 100%);
   position: absolute;
   inset: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, #0e0e0ec7 0%, #0e0e0e40 65%, #0000 100%);
 }
 
 .hero-content {
+  position: relative;
   z-index: 2;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 3rem;
-  position: relative;
+  padding: 128px 48px;
 }
 
 .hero-badge {
-  letter-spacing: 0.18em;
+  display: inline-block;
+  letter-spacing: 2.0736px;
   text-transform: uppercase;
   color: var(--accent);
   border: 1px solid var(--b-acc);
-  margin-bottom: 2rem;
-  padding: 0.35rem 0.9rem;
+  margin-bottom: 32px;
+  padding: 5.6px 14.4px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.72rem;
-  display: inline-block;
+  font-size: 11.52px;
 }
 
 #home h1 {
   max-width: 14ch;
-  margin-bottom: 1.5rem;
-  font-size: clamp(3rem, 7vw, 6.5rem);
+  margin-bottom: 24px;
+  font-size: clamp(48px, 7vw, 104px);
   font-weight: 900;
 }
 
@@ -175,27 +175,27 @@ section {
 .hero-sub {
   color: var(--body);
   max-width: 50ch;
-  margin-bottom: 3rem;
-  font-size: 1.1rem;
+  margin-bottom: 48px;
+  font-size: 17.6px;
   font-weight: 300;
 }
 
 .cta-row {
-  gap: 1.5rem;
   display: flex;
+  gap: 24px;
 }
 
 .btn {
-  letter-spacing: 0.1em;
+  display: inline-block;
+  letter-spacing: 1.248px;
   text-transform: uppercase;
   border: 2px solid var(--accent);
   cursor: pointer;
-  padding: 0.85rem 2rem;
+  padding: 13.6px 32px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.78rem;
+  font-size: 12.48px;
   font-weight: 500;
   transition: background 0.2s, color 0.2s;
-  display: inline-block;
 }
 
 .btn-fill {
@@ -220,23 +220,23 @@ section {
 }
 
 .scroll-hint {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
   z-index: 2;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  display: flex;
-  position: absolute;
-  bottom: 2.5rem;
-  left: 50%;
+  gap: 8px;
   transform: translateX(-50%);
 }
 
 .scroll-hint span {
-  letter-spacing: 0.2em;
+  letter-spacing: 2.08px;
   text-transform: uppercase;
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 10.4px;
 }
 
 .scroll-line {
@@ -264,36 +264,36 @@ section {
 
 .img-frame::after {
   content: "";
-  border: 2px solid var(--b-acc);
-  z-index: -1;
   position: absolute;
-  inset: 1.5rem -1.5rem -1.5rem 1.5rem;
+  inset: 24px -24px -24px 24px;
+  z-index: -1;
+  border: 2px solid var(--b-acc);
 }
 
 #about h2 {
-  margin-bottom: 1.5rem;
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  margin-bottom: 24px;
+  font-size: clamp(32px, 3.5vw, 51.2px);
 }
 
 .about-p {
   color: var(--body);
-  margin-bottom: 1.25rem;
-  font-size: 1.05rem;
+  margin-bottom: 20px;
+  font-size: 16.8px;
 }
 
 .socials {
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
 }
 
 .socials a {
   color: var(--accent);
   border-bottom: 1px solid var(--b-acc);
-  padding-bottom: 0.15rem;
+  padding-bottom: 2.4px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.8rem;
+  font-size: 12.8px;
   transition: color 0.2s, border-color 0.2s;
 }
 
@@ -304,19 +304,19 @@ section {
 
 /* Skills */
 #skills h2 {
-  margin-bottom: 0.75rem;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 12px;
+  font-size: clamp(32px, 3.5vw, 48px);
 }
 
 .section-sub {
   color: var(--muted);
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 0.93rem;
+  font-size: 14.88px;
 }
 
 thead tr {
@@ -324,13 +324,13 @@ thead tr {
 }
 
 th {
-  letter-spacing: 0.15em;
+  letter-spacing: 1.632px;
   text-transform: uppercase;
   color: var(--accent);
   text-align: left;
-  padding: 0.9rem 1.2rem;
+  padding: 14.4px 19.2px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 10.88px;
   font-weight: 500;
 }
 
@@ -338,7 +338,7 @@ td {
   color: var(--body);
   border-bottom: 1px solid var(--b-sub);
   vertical-align: middle;
-  padding: 0.9rem 1.2rem;
+  padding: 14.4px 19.2px;
 }
 
 tr:hover td {
@@ -351,7 +351,7 @@ tr:hover td {
 }
 
 .skill-cat {
-  font-size: 0.8rem;
+  font-size: 12.8px;
   color: var(--muted);
 }
 
@@ -371,13 +371,13 @@ tr:hover td {
 }
 
 .badge {
+  display: inline-block;
   border: 1px solid var(--b-sub);
   color: var(--muted);
-  letter-spacing: 0.04em;
-  padding: 0.18rem 0.6rem;
+  letter-spacing: 0.4352px;
+  padding: 2.88px 9.6px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
-  display: inline-block;
+  font-size: 10.88px;
 }
 
 .badge.expert {
@@ -391,14 +391,14 @@ tr:hover td {
 
 /* Projects */
 #projects h2 {
-  margin-bottom: 0.75rem;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 12px;
+  font-size: clamp(32px, 3.5vw, 48px);
 }
 
 .card-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .card {
@@ -426,47 +426,46 @@ tr:hover td {
 }
 
 .card-body {
-  padding: 1.4rem;
+  padding: 22.4px;
 }
 
 .card-tag {
-  letter-spacing: 0.12em;
+  letter-spacing: 1.3056px;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.55rem;
+  margin-bottom: 8.8px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.68rem;
-  display: block;
+  font-size: 10.88px;
 }
 
 .card-title {
   color: var(--cream);
-  margin-bottom: 0.55rem;
+  margin-bottom: 8.8px;
   font-family: "Playfair Display", serif;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .card-desc {
   color: var(--muted);
-  margin-bottom: 1.2rem;
-  font-size: 0.87rem;
+  margin-bottom: 19.2px;
+  font-size: 13.92px;
   line-height: 1.6;
 }
 
 .card-links {
-  gap: 1rem;
   display: flex;
+  gap: 16px;
 }
 
 .card-links a {
   color: var(--muted);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.896px;
   text-transform: uppercase;
   border-bottom: 1px solid var(--b-sub);
-  padding-bottom: 0.12rem;
+  padding-bottom: 1.92px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 11.2px;
   transition: color 0.2s, border-color 0.2s;
 }
 
@@ -478,7 +477,7 @@ tr:hover td {
 /* Video */
 #video {
   background: var(--card);
-  padding: 6rem 3rem;
+  padding: 96px 48px;
 }
 
 .video-inner {
@@ -487,32 +486,32 @@ tr:hover td {
 }
 
 #video h2 {
-  margin-bottom: 0.75rem;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 12px;
+  font-size: clamp(32px, 3.5vw, 48px);
 }
 
 .video-sub {
   color: var(--muted);
   max-width: 58ch;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 }
 
 .video-wrap {
-  border: 1px solid var(--b-sub);
-  height: 0;
-  padding-bottom: 56.25%;
   position: relative;
   overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+  border: 1px solid var(--b-sub);
   box-shadow: 0 0 80px #e8c5470f;
 }
 
 .video-wrap iframe {
-  border: none;
-  width: 100%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Contact */
@@ -521,49 +520,49 @@ tr:hover td {
 }
 
 #contact h2 {
-  margin-bottom: 1.5rem;
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  margin-bottom: 24px;
+  font-size: clamp(35.2px, 4vw, 56px);
 }
 
 .contact-p {
   color: var(--body);
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .contact-list {
-  flex-direction: column;
-  gap: 1.25rem;
-  list-style: none;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
 }
 
 .contact-list li {
-  border-left: 2px solid var(--b-acc);
-  align-items: flex-start;
-  gap: 1rem;
-  padding-left: 1rem;
   display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 16px;
+  border-left: 2px solid var(--b-acc);
 }
 
 .contact-label {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 1.12px;
   color: var(--accent);
   min-width: 82px;
-  padding-top: 0.1rem;
+  padding-top: 1.6px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 11.2px;
 }
 
 .contact-value {
   color: var(--cream);
-  font-size: 0.95rem;
+  font-size: 15.2px;
 }
 
 .contact-value a {
   color: var(--cream);
   border-bottom: 1px solid var(--b-sub);
-  padding-bottom: 0.1rem;
+  padding-bottom: 1.6px;
 }
 
 .contact-value a:hover {
@@ -572,23 +571,23 @@ tr:hover td {
 }
 
 form {
-  flex-direction: column;
-  gap: 1.2rem;
   display: flex;
+  flex-direction: column;
+  gap: 19.2px;
 }
 
 .form-group {
-  flex-direction: column;
-  gap: 0.45rem;
   display: flex;
+  flex-direction: column;
+  gap: 7.2px;
 }
 
 .form-group label {
-  letter-spacing: 0.12em;
+  letter-spacing: 1.344px;
   text-transform: uppercase;
   color: var(--muted);
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 11.2px;
 }
 
 .form-group input,
@@ -598,9 +597,9 @@ form {
   resize: none;
   background: #ffffff0a;
   outline: none;
-  padding: 0.8rem 1rem;
+  padding: 12.8px 16px;
   font-family: "Inter", sans-serif;
-  font-size: 0.93rem;
+  font-size: 14.88px;
   transition: border-color 0.2s;
 }
 
@@ -620,35 +619,35 @@ form {
 
 /* Footer */
 footer {
-  border-top: 1px solid var(--b-sub);
-  background: #080808;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  padding: 2.25rem 3rem;
-  display: flex;
+  gap: 16px;
+  padding: 36px 48px;
+  border-top: 1px solid var(--b-sub);
+  background: #080808;
 }
 
 .footer-copy {
   color: var(--muted);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.784px;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 11.2px;
 }
 
 .footer-links {
-  gap: 2rem;
-  list-style: none;
   display: flex;
+  gap: 32px;
+  list-style: none;
 }
 
 .footer-links a {
   color: var(--muted);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.784px;
   text-transform: uppercase;
   font-family: "JetBrains Mono", monospace;
-  font-size: 0.7rem;
+  font-size: 11.2px;
 }
 
 .footer-links a:hover {
